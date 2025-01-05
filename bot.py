@@ -1,11 +1,7 @@
-import os
 import requests
 from twitchio.ext import commands
-from dotenv import load_dotenv
 
-# Załaduj zmienne środowiskowe
-load_dotenv()
-
+# Tokeny i klucze bezpośrednio w kodzie
 TWITCH_TOKEN = '4l6zdyotud165tqetl3bn2otex8bnv'
 OWM_API_KEY = 'e0561e4677fbd9a616065f4043c59ef5'
 TWITCH_CLIENT_ID = 'gp762nuuoqcoxyPju8c569th9wz7q5'
@@ -16,7 +12,7 @@ bot = commands.Bot(
     client_id=TWITCH_CLIENT_ID,
     nick=TWITCH_NICK,
     prefix='!',
-    initial_channels=['Hazyy_', fake_danon']  # Zamień na właściwe nazwy kanałów
+    initial_channels=['Hazyyr_', 'fake_danon']  # Zamień na właściwe nazwy kanałów
 )
 
 def get_weather(city):
